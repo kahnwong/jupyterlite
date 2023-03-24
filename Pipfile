@@ -12,7 +12,7 @@ jupyterlite = "==0.1.0b14"
 # data
 numpy = "==1.23.4"
 pandas = "==1.5.1"
-matplotlib = "==3.6.1"
+matplotlib = "==3.7.1"
 
 [dev-packages]
 
