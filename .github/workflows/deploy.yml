@@ -4,7 +4,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-    - master
+      - master
   # pull_request:
   #   branches:
   #     - "*"
@@ -16,40 +16,40 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-    - name: Install pipenv
-      run: pipx install pipenv
-    - uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
-        cache: pipenv
-    - name: Install the dependencies
-      run: |
-        pipenv install
-    - name: Build the JupyterLite site
-      run: |
-        cp README.md content
-        pipenv run jupyter lite build --contents content
-    - name: Upload (dist)
-      uses: actions/upload-artifact@v3
-      with:
-        name: jupyterlite-demo-dist-${{ github.run_number }}
-        path: ./_output
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install pipenv
+        run: pipx install pipenv
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: pipenv
+      - name: Install the dependencies
+        run: |
+          pipenv install
+      - name: Build the JupyterLite site
+        run: |
+          cp README.md content
+          pipenv run jupyter lite build --contents content
+      - name: Upload (dist)
+        uses: actions/upload-artifact@v3
+        with:
+          name: jupyterlite-demo-dist-${{ github.run_number }}
+          path: ./_output
 
   deploy:
     if: github.ref == 'refs/heads/master'
     needs: [build]
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-    - uses: actions/download-artifact@v3
-      with:
-        name: jupyterlite-demo-dist-${{ github.run_number }}
-        path: ./dist
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@v4.4.1
-      with:
-        branch: gh-pages
-        folder: dist
+      - name: Checkout
+        uses: actions/checkout@v3
+      - uses: actions/download-artifact@v3
+        with:
+          name: jupyterlite-demo-dist-${{ github.run_number }}
+          path: ./dist
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        with:
+          branch: gh-pages
+          folder: dist

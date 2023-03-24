@@ -5,16 +5,16 @@ name = "pypi"
 
 [packages]
 # jupyter
-ipywidgets = "==8.0.2"
-jupyterlab = "==3.5.0"
-jupyterlite = "==0.1.0b14"
+ipywidgets = "==8.0.5"
+jupyterlab = "==3.6.2"
+jupyterlite = "==0.1.0b21"
 
 # data
-numpy = "==1.23.4"
-pandas = "==1.5.1"
-matplotlib = "==3.6.1"
+numpy = "==1.24.2"
+pandas = "==1.5.3"
+matplotlib = "==3.7.1"
 
 [dev-packages]
 
 [requires]
-python_version = "3.10"
+python_version = "3.11"
