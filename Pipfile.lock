@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8d2ad3b88f3cb157f858566a164fb5f3a122dde84ae11719ec0c844755bd114d"
+            "sha256": "c7c78a2024e6c84d6a5a19a9843443457c88cd519a21dea33eef6ff7072a6c91"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -611,11 +611,11 @@
         },
         "jupyterlite": {
             "hashes": [
-                "sha256:5414282a6a0e1e9365d6743113981b4dbfc32cd8354d0dcaaa5c9b840074be98",
-                "sha256:8dc1e0df087ce3d594a39e7499556bdcbb89abbfd51e2e53e2c24db9a23a9af9"
+                "sha256:6e9949bc51247368bea8a0136256694255ace315e6e057020d29b36fe92c3c38",
+                "sha256:f0bf867083eb42602bd242e3dae08efde1df75b89e1a30cb53130be44ee520cc"
             ],
             "index": "pypi",
-            "version": "==0.1.0b21"
+            "version": "==0.1.0"
         },
         "jupyterlite-core": {
             "hashes": [
