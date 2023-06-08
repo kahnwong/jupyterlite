@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 # jupyter
 ipywidgets = "==8.0.6"
-jupyterlab = "==4.0.1"
+jupyterlab = "==4.0.2"
 jupyterlite = "==0.1.0"
 
 # data
