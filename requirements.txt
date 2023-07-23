@@ -1,46 +1,43 @@
+# # JavaScript kernel (optional)
+# # JupyterLab: Fasta file renderer (optional)
+# # JupyterLab: Miami nights theme (optional)
+# # JupyterLab: dark theme
+# # JupyterLab: guided tour (optional)
+# # Language support (optional)
+# # Lua kernel (optional)
+# # P5 kernel (optional)
+# # Python: interative Matplotlib library for Jupyter notebooks (optional)
+# # Python: ipycanvas library for Jupyter notebooks (optional)
+# # Python: ipyevents library for Jupyter notebooks (optional)
+# # Python: ipywidget library for Jupyter notebooks (optional)
+# # Python: plotting libraries (optional)
+# # SQLite kernel (optional)
 # Core modules (mandatory)
-jupyterlite-core==0.1.0
-jupyterlab~=3.5.1
-
-# Python kernel (optional)
-jupyterlite-pyodide-kernel==0.0.6
-
-# JavaScript kernel (optional)
-jupyterlite-javascript-kernel==0.1.0b21
-
-# Language support (optional)
-jupyterlab-language-pack-fr-FR
-jupyterlab-language-pack-zh-CN
-
-# SQLite kernel (optional)
-jupyterlite-xeus-sqlite==0.2.1
-# P5 kernel (optional)
-jupyterlite-p5-kernel==0.1.0
-# Lua kernel (optional)
-jupyterlite-xeus-lua==0.3.1
-
-# JupyterLab: Fasta file renderer (optional)
-jupyterlab-fasta>=3,<4
 # JupyterLab: Geojson file renderer (optional)
-jupyterlab-geojson>=3,<4
-# JupyterLab: guided tour (optional)
-jupyterlab-tour
-# JupyterLab: dark theme
-jupyterlab-night
-# JupyterLab: Miami nights theme (optional)
-jupyterlab_miami_nights
-
-# Python: ipywidget library for Jupyter notebooks (optional)
-ipywidgets>=8.0.0,<9
-# Python: ipyevents library for Jupyter notebooks (optional)
-ipyevents>=2.0.1
-# Python: interative Matplotlib library for Jupyter notebooks (optional)
-ipympl>=0.8.2
-# Python: ipycanvas library for Jupyter notebooks (optional)
-ipycanvas>=0.9.1
+# Python kernel (optional)
+# Python: data tools
 # Python: ipyleaflet library for Jupyter notebooks (optional)
+# bqplot
+# ipycanvas>=0.9.1
+# ipyevents>=2.0.1
+# ipympl>=0.8.2
+# ipywidgets>=8.0.0,<9
+# jupyterlab-fasta>=3,<4
+# jupyterlab-language-pack-fr-FR
+# jupyterlab-language-pack-zh-CN
+# jupyterlab-night
+# jupyterlab-tour
+# jupyterlab_miami_nights
+# jupyterlite-javascript-kernel==0.1.0b21
+# jupyterlite-p5-kernel==0.1.0
+# jupyterlite-xeus-lua==0.3.1
+# jupyterlite-xeus-sqlite==0.2.1
+# plotly>=5,<6
 ipyleaflet
-
-# Python: plotting libraries (optional)
-plotly>=5,<6
-bqplot
+jupyterlab-geojson>=3,<4
+jupyterlab~=3.5.1
+jupyterlite-core==0.1.0
+jupyterlite-pyodide-kernel==0.0.6
+matplotlib==3.7.1
+numpy==1.24.3
+pandas==2.0.2
