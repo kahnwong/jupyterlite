@@ -36,7 +36,7 @@
 ipyleaflet
 jupyterlab-geojson>=3,<4
 jupyterlab~=3.5.1
-jupyterlite-core==0.1.0
+jupyterlite-core==0.1.1
 jupyterlite-pyodide-kernel==0.0.6
 matplotlib==3.7.1
 numpy==1.24.3
