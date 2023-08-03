@@ -35,7 +35,7 @@
 # plotly>=5,<6
 ipyleaflet
 jupyterlab-geojson>=3,<4
-jupyterlab~=3.5.1
+jupyterlab~=4.0.4
 jupyterlite-core==0.1.1
 jupyterlite-pyodide-kernel==0.0.8
 matplotlib==3.7.1
