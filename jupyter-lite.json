@@ -2,7 +2,7 @@
   "jupyter-config-data": {
     "appName": "JupyterLite",
     "appUrl": "./lab",
-    "appVersion": "0.1.0",
+    "appVersion": "0.1.2",
     "baseUrl": "./",
     "defaultKernelName": "python",
     "faviconUrl": "./lab/favicon.ico",
@@ -23,13 +23,13 @@
       {
         "extension": "./extension",
         "liteExtension": true,
-        "load": "static/remoteEntry.9769e16943c1366c4972.js",
+        "load": "static/remoteEntry.fabc1fef75f1e3a86469.js",
         "name": "@jupyterlite/pyodide-kernel-extension"
       },
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.1479e7375eead669c0d0.js",
+        "load": "static/remoteEntry.edc72ee71d4ec67598f6.js",
         "name": "jupyter-leaflet"
       },
       {
@@ -320,7 +320,7 @@
     "litePluginSettings": {
       "@jupyterlite/pyodide-kernel-extension:kernel": {
         "pipliteUrls": [
-          "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=dada95d1039a199bb4503c6652605f7815ea056b19f3c08a6e78a0c5739f19d4"
+          "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=559fdb0c528ad0e0843f12d3dec4e043c112bcfe56ede80ae019755d81c930b0"
         ]
       }
     },
