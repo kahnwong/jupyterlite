@@ -2,7 +2,7 @@
   "jupyter-config-data": {
     "appName": "JupyterLite",
     "appUrl": "./lab",
-    "appVersion": "0.1.2",
+    "appVersion": "0.2.3",
     "baseUrl": "./",
     "defaultKernelName": "python",
     "faviconUrl": "./lab/favicon.ico",
@@ -23,19 +23,19 @@
       {
         "extension": "./extension",
         "liteExtension": true,
-        "load": "static/remoteEntry.fabc1fef75f1e3a86469.js",
+        "load": "static/remoteEntry.56b1d891a24a2cc674e1.js",
         "name": "@jupyterlite/pyodide-kernel-extension"
       },
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.edc72ee71d4ec67598f6.js",
+        "load": "static/remoteEntry.5e71a5e8dcb6330c0085.js",
         "name": "jupyter-leaflet"
       },
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.aa1060b2d1221f8e5688.js",
+        "load": "static/remoteEntry.5cbb9d2323598fbda535.js",
         "name": "jupyterlab_pygments",
         "style": "./style"
       }
@@ -314,17 +314,15 @@
       }
     },
     "fullLabextensionsUrl": "./extensions",
-    "fullMathjaxUrl": "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js",
     "fullStaticUrl": "./build",
     "licensesUrl": "./lab/api/licenses",
     "litePluginSettings": {
       "@jupyterlite/pyodide-kernel-extension:kernel": {
         "pipliteUrls": [
-          "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=559fdb0c528ad0e0843f12d3dec4e043c112bcfe56ede80ae019755d81c930b0"
+          "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=39797aa5a010c14d980945936127dbfe731c3680271118cb19b6af002503c3b6"
         ]
       }
-    },
-    "mathjaxConfig": "TeX-AMS_CHTML-full,Safe"
+    }
   },
   "jupyter-lite-schema-version": 0
 }
