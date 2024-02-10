@@ -35,20 +35,11 @@ jobs:
         with:
           name: jupyterlite-demo-dist-${{ github.run_number }}
           path: ./_output
-
-  deploy:
-    if: github.ref == 'refs/heads/master'
-    needs: [build]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@1
         with:
-          name: jupyterlite-demo-dist-${{ github.run_number }}
-          path: ./dist
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.5.0
-        with:
-          branch: gh-pages
-          folder: dist
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID}}
+          projectName: jupyterlite
+          directory: ./_output
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
