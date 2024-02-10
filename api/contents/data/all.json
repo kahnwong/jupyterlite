@@ -2,11 +2,11 @@
   "content": [
     {
       "content": null,
-      "created": "2024-02-10T10:08:29.923022Z",
+      "created": "2024-02-10T10:10:20.534746Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2024-02-10T10:07:53.735379Z",
+      "last_modified": "2024-02-10T10:09:45.378693Z",
       "mimetype": "application/geo+json",
       "name": "Museums_in_DC.geojson",
       "path": "data/Museums_in_DC.geojson",
@@ -15,11 +15,11 @@
       "writable": true
     }
   ],
-  "created": "2024-02-10T10:08:29.923022Z",
+  "created": "2024-02-10T10:10:20.534746Z",
   "format": "json",
   "hash": null,
   "hash_algorithm": null,
-  "last_modified": "2024-02-10T10:08:29.923022Z",
+  "last_modified": "2024-02-10T10:10:20.534746Z",
   "mimetype": null,
   "name": "data",
   "path": "data",
