@@ -11,7 +11,7 @@ python = "^3.11"
 # jupyter
 ipyleaflet = "^0.18.2"
 jupyterlab-geojson = "^3.4.0"
-jupyterlab = "^4.0.11"
+jupyterlab = "^4.1.6"
 jupyterlite-core = "^0.2.3"
 jupyterlite-pyodide-kernel = "^0.2.1"
 
