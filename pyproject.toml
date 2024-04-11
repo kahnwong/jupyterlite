@@ -16,7 +16,7 @@ jupyterlite-core = "^0.2.3"
 jupyterlite-pyodide-kernel = "^0.2.1"
 
 # libs
-pandas = "^2.2.0"
+pandas = "^2.2.2"
 numpy = "^1.26.3"
 matplotlib = "^3.8.2"
 pydantic = "^2.5.3"
