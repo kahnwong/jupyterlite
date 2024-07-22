@@ -9,7 +9,7 @@ readme = "README.md"
 python = "^3.11"
 
 # jupyter
-ipyleaflet = "^0.19.1"
+ipyleaflet = "^0.19.2"
 jupyterlab-geojson = "^3.4.0"
 jupyterlab = "^4.2.3"
 jupyterlite-core = "^0.3.0"
