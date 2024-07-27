@@ -5,13 +5,15 @@ on:
   push:
     branches:
       - master
-  # pull_request:
-  #   branches:
-  #     - "*"
+  workflow_dispatch:
 
 concurrency:
   group: environment-${{ github.ref }}
   cancel-in-progress: true
+
+env:
+  PROJECT_NAME: jupyterlite
+  BUILD_DIR: _output
 
 jobs:
   build:
@@ -36,10 +38,8 @@ jobs:
           name: jupyterlite-demo-dist-${{ github.run_number }}
           path: ./_output
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID}}
-          projectName: jupyterlite
-          directory: ./_output
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ${{ env.BUILD_DIR }} --project-name=${{ env.PROJECT_NAME }}
