@@ -19,7 +19,7 @@ jupyterlite-pyodide-kernel = "^0.3.2"
 pandas = "^2.2.2"
 numpy = "^2.0.0"
 matplotlib = "^3.9.1"
-pydantic = "^2.8.2"
+pydantic = "^2.9.0"
 
 [build-system]
 requires = ["poetry-core"]
