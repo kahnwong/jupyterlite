@@ -1,0 +1,23 @@
+name: Python Test
+on:
+  pull_request:
+    paths-ignore:
+      - '.github/**'
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  python-test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v8.1.0
+        with:
+          enable-cache: true
+          cache-python: true
+      - name: Build
+        run: |
+          make build
